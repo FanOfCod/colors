@@ -1,0 +1,224 @@
+body {
+    background: #5d5d5d;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.combine-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80vh;
+    max-width: 1100px;
+    margin: 10vh auto 0;
+    margin-right: 10vh auto 0;
+    margin-left: 10vh auto 0;
+}
+
+.combine-colors>* {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 4 auto;
+    flex: 1 4 auto;
+    padding: 2rem;
+    border: 0.1rem solid #6c6c6c;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+}
+
+.combine-colors>*:first-child {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+}
+
+.combine-colors>*:nth-child(2) {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+}
+
+.combine-colors>*:last-child {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+}
+
+.sample-edit {
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.sample-edit input,
+.sample-edit textarea,
+.sample-edit select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 12px;
+    line-height: 1;
+    font-size: 1.2rem;
+    border: 0;
+    border-bottom: 1px solid #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background: #fff;
+}
+
+.sample-edit input:focus,
+.sample-edit textarea:focus,
+.sample-edit select:focus {
+    outline: 0;
+    background: #c4c1bb;
+}
+
+.sample-edit button {
+    width: 100%;
+    border: 0;
+}
+
+.sample-edit textarea {
+    width: 100%;
+}
+
+.sample-edit input {
+    border-right: 1px solid #000;
+}
+
+.sample-edit input:last-of-type {
+    border-right: 0px;
+    width: 100%;
+}
+
+.samples li {
+    list-style-type: none;
+}
+
+.list-of-samples {
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+}
+
+.sample-line {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+.hover-botton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin: 0;
+}
+
+
+/*styl okna loginu*/
+
+.log-in-botton {
+    position: absolute;
+    right: 1em;
+    top: 0px;
+    margin-top: 1em;
+    /* z-index: 8;*/
+}
+
+.login-form-container {
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.login-form-content {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-right: -100px;
+    z-index: 10;
+}
+
+.login-button-container {
+    position: relative;
+}
+
+.login-form,
+.input-container {
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 15px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.input-container {
+    background: #CCCCCC;
+    padding: 5px;
+}
+
+.input-text {
+    background: none;
+    border: none;
+    padding-bottom: 0px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.login {
+    border: 0;
+    width: 200px;
+    background: none;
+}
+
+.login-form,
+.button {
+    margin-top: 15px;
+    width: 100%;
+    border: 0;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.login-form .register {
+    margin-top: 5px;
+    background: #CCCCCC;
+    border: 0;
+    color: #676464;
+    padding: 8px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+
+.close-button {
+    right: 0;
+    border: none !important;
+    background: none !important;
+}

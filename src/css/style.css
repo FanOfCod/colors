@@ -1,0 +1,255 @@
+    body {
+        background: #2a2a2a;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #CCCCCC;
+    }
+    
+    .combine-colors {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 80vh;
+        max-width: 1200px;
+        margin: 10vh auto 0;
+        margin-right: 10vh auto 0;
+        margin-left: 10vh auto 0;
+        padding: 0;
+        font-family: 'Roboto', open sans;
+    }
+    
+    .combine-colors>* {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 4 auto;
+        flex: 1 4 auto;
+        padding: 2rem;
+        position: relative;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        /*overflow: scroll;*/
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .combine-colors>*:first-child {
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    }
+    
+    .combine-colors>*:nth-child(2) {
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    }
+    
+    .combine-colors>*:last-child {
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    }
+    /*styl tableki */
+    
+    .sample-edit,
+    .sample-edit-invent {
+        /*margin-bottom: 20px;*/
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 12rem;
+        margin: 0;
+        margin-top: 2rem;
+        font-family: 'Roboto Light';
+    }
+    
+    .sample-edit-invent {
+        height: 16rem;
+    }
+    
+    .sample-edit input,
+    .sample-edit textarea,
+    .sample-edit select,
+    .sample-edit-invent input,
+    .sample-edit-invent textarea,
+    .sample-edit-invent select {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 8px;
+        font-size: 0.7rem;
+        border: 0.5px solid rgb(46, 46, 46);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 5px;
+        background: rgb(34, 34, 34);
+        font-family: inherit;
+        color: rgb(152, 152, 152);
+        -moz-box-shadow: inset 0 0 3px #161616;
+        -webkit-box-shadow: inset 0 0 3px #161616;
+        box-shadow: inset 0 0 3px #161616;
+    }
+    
+    .sample-edit input,
+    .sample-edit-invent input {
+        width: 32%;
+        line-height: 0.6rm;
+        margin-right: 2%;
+    }
+    
+    .sample-edit select,
+    .sample-edit-invent select {
+        width: 32%;
+    }
+    
+    .form-button {
+        border: 0.5px solid rgb(255, 0, 0);
+        background: none;
+        border-radius: 4px;
+        font-family: inherit;
+        color: #CCCCCC;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+    
+    .sample-edit textarea,
+    .sample-edit-invent textarea {
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .sample-edit input:last-of-type,
+    .sample-edit-invent input:last-of-type {
+        margin: 0 !important;
+        width: 100%;
+    }
+    
+    .sample-edit input:focus,
+    .sample-edit textarea:focus,
+    .sample-edit select:focus,
+    .sample-edit-invent input:focus,
+    .sample-edit-invent textarea:focus,
+    .sample-edit-invent select:focus {
+        outline: 0;
+        background: #2e2e2e;
+    }
+    /* style of samples */
+    
+    .samples li {
+        list-style-type: none;
+    }
+    
+    .list-of-samples {
+        padding: 0px;
+        margin-top: 10%;
+        width: 100%;
+    }
+    
+    .sample-line {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+    
+    .hover-botton {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        margin: 0;
+    }
+    /*styl okna loginu*/
+    
+    .log-in-botton {
+        position: absolute;
+        right: 1em;
+        top: 0px;
+        margin-top: 1em;
+        background: none;
+    }
+    
+    .login-form-container {
+        position: absolute !important;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        z-index: 10;
+    }
+    
+    .login-form-content {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        margin-top: -200px;
+        margin-right: -125px;
+        z-index: 10;
+        font-family: 'Roboto Light';
+        width: 250px;
+    }
+    
+    .login-form,
+    .input-container {
+        margin-top: 15px;
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    
+    .input-container {
+        border: 0.5px solid rgb(61, 61, 61);
+        border-radius: 5px;
+        background: rgb(34, 34, 34);
+        font-family: inherit;
+        color: rgb(152, 152, 152);
+        -moz-box-shadow: inset 0 0 3px #161616;
+        -webkit-box-shadow: inset 0 0 3px #161616;
+        box-shadow: inset 0 0 3px #161616;
+        padding: 5px;
+        clear: right;
+    }
+    
+    .input-text {
+        padding-left: 8px;
+        background: none;
+        border: 0;
+        font-size: 0.7rem;
+    }
+    
+    .logIn,
+    .register {
+        margin-top: 15px;
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        background: rgb(66, 66, 66);
+        font-family: inherit;
+        color: rgb(152, 152, 152);
+        padding: 7px;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+    
+    .close-button {
+        right: 0;
+        border: none !important;
+        background: none !important;
+        float: right;
+    }
+    
+    .IconEnvelope,
+    .IconLock,
+    .IconClose {
+        fill: rgb(149, 149, 149);
+    }
